@@ -72,9 +72,15 @@ git tag -d [nombre del tag] # elimina una etiqueta
 
 git push origin :refs/tags/[nombre del tag] # borra la etiqueta incluso de github
 
+git show-branch # muestra las ramas y su historia
+git show-branch --all # muestra las ramas y su historia con más detalle
 
+gitk # abre un entorno gráfico de git (si es que tienes entorno gráfico)
 
+git push origin [branch] # sube una rama en concreto al repositorio remoto
+git pull origin [branch] # baja una rama en concreto al repositorio remoto
 
+git clone https://github.com/Ultano/tienda # se descarga un repositorio completo
 
 
 
