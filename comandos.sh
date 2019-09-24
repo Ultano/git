@@ -83,7 +83,27 @@ git pull origin [branch] # baja una rama en concreto al repositorio remoto
 
 git clone https://github.com/Ultano/tienda # se descarga un repositorio completo
 
+# pull request => github
+# merge request => gitlab
+# push request => bitbucket
 
+# para usar pull request:
+    # 1.- descargamos la rama master del repositorio remoto:
+git pull origin master
+    # 2.- creamos la nueva rama para la tarea a realizar
+git branch nuevaTarea
+    # 3.- cambiamos a dicha rama
+git checkout nuevaTarea
+    # 4.- subimos la nueva rama al repositorio remoto
+git push
+    # 5.- realizamos la tarea y hacemos un commit
+git add [ficheros modificados]
+git commit -m "tarea realizada"
+git pull
+git push origin nuevaTarea
+    # al crear el pull request entre una rama y el master no se fusionan las ramas
+    # para fusionarlas, tenemos que hacer un merge, para lo cual, los cambios deben estar aprobados
+        # las opciones rebase y squash son malas prácticas, por lo general
 
 
 
