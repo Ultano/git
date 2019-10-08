@@ -55,6 +55,7 @@ eval $(ssh-agent -s) # comprobamos que se está ejecutando el servidor de ssh
 
 ssh-add ~/.ssh/id_rsa  # añade la llave ssh privada
 
+git remote add origin git@github.com:Ultano/python.git # añade la url del repositorio remoto
 git remote set-url origin git@github.com:Ultano/tienda  # modifica la url del repositorio remoto
 git remote set-url origin git@github.com:Ultano/docker.git  # modifica la url del repositorio remoto
 git pull origin # pull desde el origin
