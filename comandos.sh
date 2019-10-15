@@ -106,6 +106,12 @@ git push origin nuevaTarea
     # para fusionarlas, tenemos que hacer un merge, para lo cual, los cambios deben estar aprobados
         # las opciones rebase y squash son malas prácticas, por lo general
 
+# cuando hacemos un fork o, por el motivo que sea, queremos descargarnos los comabios
+# desde un sitio diferente a aquel en el que guardamos nuestros commits, hacemos:
+git remote add upstream https://github.com/ultano/proyecto_original # lo podemos llamar upstream o como queramos
+# de forma que cuando queramos que nuestro fork converja con el proyecto original podemos hacer:
+
+git pull upstream master # descargamos los cambios de la rama master de proyecto original a nuestra rama master
 
 
 
