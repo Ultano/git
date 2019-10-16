@@ -122,6 +122,8 @@ git stash pop # deja la rama con los cambios temporales activados, pudiendo dar 
 git stash branch mi_nueva_rama # crea una nueva rama a partir de los cambios temporales y cambia a esa rama
 git stash drop # descarta los cambios temporales guardados
 
+git clean --dry-run # hace una simulación de borrado de ficheros que no se han guardado
+git clean -f #fuerza el borrado
 
 
 
