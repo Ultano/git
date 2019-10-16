@@ -113,6 +113,16 @@ git remote add upstream https://github.com/ultano/proyecto_original # lo podemos
 
 git pull upstream master # descargamos los cambios de la rama master de proyecto original a nuestra rama master
 
+git rebase master # MALA PRÁCTICA: trae todos los commits de la rama master a la rama actual
+git rebase otra_rama # sobre escribe la historia de master con los commits de otra_rama
+
+git stash # guarda en un lugar temporal los cambios actuales
+git stash list # muestra los cambios temporalmente guardados
+git stash pop # deja la rama con los cambios temporales activados, pudiendo dar ctr + z para deshacerlos
+git stash branch mi_nueva_rama # crea una nueva rama a partir de los cambios temporales y cambia a esa rama
+git stash drop # descarta los cambios temporales guardados
+
+
 
 
 
