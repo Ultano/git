@@ -127,6 +127,8 @@ git clean -f #fuerza el borrado
 
 git cherry-pick [hash del commit] # se trae un commit de otra rama a la rama actual. Mala práctica, porque cambia la historia del proyecto
 
+git commit --amend # añade los cambios al commit anterior en lugar de crear un commit nuevo
+
 
 
 
