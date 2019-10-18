@@ -61,8 +61,8 @@ git remote set-url origin git@github.com:Ultano/docker.git  # modifica la url de
 git pull origin # pull desde el origin
 
 git log --all --graph       # muestra la evolución del proyecto y las diferentes ramas
-git log --all --graph --decorate --online       # muestra la evolución del proyecto y las diferentes ramas
-alias arbolito = "git log --all --graph --decorate --online"       # nos hacemos un alias para usarlo de vez en cuando
+git log --all --graph --decorate --oneline       # muestra la evolución del proyecto y las diferentes ramas
+alias arbolito="git log --all --graph --decorate --oneline"       # nos hacemos un alias para usarlo de vez en cuando
 
 git tag -a v.0.1 -m "primera versión de mi proyecto" [hash del commit] # creamos una etiqueta con el proyecto en el estado en que se encontraba
                                                                        # justo después del commit cuyo hash hemos puesto como último parámetro
@@ -125,7 +125,7 @@ git stash drop # descarta los cambios temporales guardados
 git clean --dry-run # hace una simulación de borrado de ficheros que no se han guardado
 git clean -f #fuerza el borrado
 
-
+git cherry-pick [hash del commit] # se trae un commit de otra rama a la rama actual. Mala práctica, porque cambia la historia del proyecto
 
 
 
