@@ -129,6 +129,43 @@ git cherry-pick [hash del commit] # se trae un commit de otra rama a la rama act
 
 git commit --amend # añade los cambios al commit anterior en lugar de crear un commit nuevo
 
+git branch -D [nombre_rama] # elimina una rama
+git reflog # muestra todo lo que ha pasado, incluso ramas eliminadas o resets, no sólo con hashes de commits, sino también con heads
+
+git reset --HARD [hash del commit] # devuelve el proyecto al estado del commit, reconstruyendo incluso ramas eliminadas
+
+git grep [expresión regular] # muestra dónde hay coincidencias de la expresión regular
+git grep -n [expresión regular] # añade el número de línea en que machea la expresión regular
+git grep -c [expresión regular] # cuenta el número de veces que machea la expresión regular en cada archivo
+git log -S "palabra" # busca las apariciones de "palabra" en las descripciones de los commits
+
+git shortlog # muestra los commits de cada colaborador
+git shortlog -sn # muestra el número de commits de cada colaborador
+git shortlog -sn --all # muestra el número de commits de cada colaborador, incluyendo commits borrados
+git shortlog -sn --all --no-merges # muestra el número de commits de cada colaborador, incluyendo commits borrados, excluyendo los merges
+
+git config --global alias.mi_nuevo_alias "comando git a ser ejecutado" # añade un alias
+git config --global alias.arbolito "log --all --graph --decorate --oneline" # añade un alias arbolito
+git arbolito # reproduce el alias arbolito
+
+git blame nombre_del_fichero.md # muestra, el hash, el nombre y la fecha de commit responsables de cada línea del fichero.
+git blame nombre_del_fichero.md  -c # identa un poco mejor el comando anterior
+git blame --help # muestra ayuda sobre el comando blame
+git blame nombre_del_fichero.md -L15,20 # muestra los responsables del estado de las líneas 15 a 20 del fichero
+git blame nombre_del_fichero.md -L15,20 -c # formatea un poco mejor el comando anterior
+
+git branch -r # muestra las ramas remotas
+git branch -a # muestra ramas locales y remotas
+
+
+
+
+
+
+
+
+
+
 
 
 
