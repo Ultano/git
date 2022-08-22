@@ -138,6 +138,7 @@ git grep [expresión regular] # muestra dónde hay coincidencias de la expresió
 git grep -n [expresión regular] # añade el número de línea en que machea la expresión regular
 git grep -c [expresión regular] # cuenta el número de veces que machea la expresión regular en cada archivo
 git log -S "palabra" # busca las apariciones de "palabra" en las descripciones de los commits
+git log --only-name # muestra los nombres de los ficheros afectados en cada commit
 
 git shortlog # muestra los commits de cada colaborador
 git shortlog -sn # muestra el número de commits de cada colaborador
